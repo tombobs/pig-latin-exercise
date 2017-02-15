@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Pig latin coverter</h2>
+  <div class="row input-container">
+    <textarea ng-model="vm.input" class="input"></textarea>
+    <button class="button" ng-click="vm.convert(vm.input)" ng-disabled="!vm.input">Convert</button>
+  </div>
+  <div class="row output-container">
+    <div ng-bind="vm.output"></div>
+  </div>
+
+  <h4 ng-show="vm.history.length">Last {{vm.numHistoryItems}} conversions</h4>
+  <ol>
+    <li ng-repeat="item in vm.history track by $index">
+      {{item.input}} => {{item.output}}
+    </li>
+  </ol>
+</div>

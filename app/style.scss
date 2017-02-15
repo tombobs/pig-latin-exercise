@@ -1,0 +1,46 @@
+$border-color: grey;
+$input-height: 70px;
+$padding: 15px;
+
+html, body, .wrapper, [ui-view], .container {
+  color: #3c3c3c;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  background: linear-gradient(lightskyblue, dodgerblue);
+  width: 100%;
+  padding: 100px;
+}
+
+.input-container {
+  border: 1px solid $border-color;
+  border-radius: 5px 5px 0 0;
+  padding: $padding;
+}
+
+.output-container {
+  border: 1px solid $border-color;
+  border-radius: 0 0 5px 5px;
+  font-size: 30px;
+  text-align: center;
+  padding: $padding;
+}
+
+.input {
+  border-radius: 5px;
+  height: $input-height;
+  padding: $padding;
+  width: 80%;
+}
+
+.button {
+  background-color: #72a572;
+  border-radius: 5px;
+  color: white;
+  height: $input-height;
+  padding: $padding;
+  vertical-align: top;
+  width: 19%;
+}

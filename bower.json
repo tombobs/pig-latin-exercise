@@ -1,0 +1,26 @@
+{
+  "name": "pigLatin",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular-ui-router": "~0.4.2",
+    "angular": "~1.6.2"
+  },
+  "homepage": "https://github.com/tombobs/dotfiles",
+  "authors": [
+    "tom6284 <tombobs86@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.6.2"
+  }
+}

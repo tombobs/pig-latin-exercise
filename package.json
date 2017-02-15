@@ -1,0 +1,43 @@
+{
+  "name": "pigLatin",
+  "version": "0.0.0",
+  "author": "Tom Roberts",
+  "scripts": {
+    "build": "node scripts/build.js && npm run styles",
+    "clean": "rimraf build",
+    "ngTemplates": "npm-html2js -b app -i 'app/**/*.tpl.html' -m 'pigLatin.templates' -o 'build/js/templates.js'",
+    "postbuild": "postbuild -i build/index.html -j build/js",
+    "test": "karma start karma.conf.js",
+    "server": "node scripts/server.js",
+    "start": "npm run clean && npm run build && npm run server",
+    "styles": "node-sass app/style.scss build/style.css"
+  },
+  "dependencies": {
+    "angular": "^1.5.11",
+    "angular-mocks": "~1.5",
+    "angular-ui-router": "^0.4.2"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.3",
+    "html-inject-script": "^1.1.0",
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-cli": "^0.1.1",
+    "karma-jasmine": "^0.3.8",
+    "karma-ng-html2js-preprocessor": "^0.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "livereload": "^0.6.0",
+    "lodash": "^3.10.1",
+    "merge-stream": "^1.0.1",
+    "node-sass": "^4.5.0",
+    "npm-html2js": "^0.1.8",
+    "open": "0.0.5",
+    "postbuild": "https://github.com/tombobs/postbuild.git",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2",
+    "serve-static": "^1.11.2",
+    "wiredep": "^4.0.0"
+  }
+}
